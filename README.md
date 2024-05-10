@@ -2,6 +2,8 @@
 
 A tiny tool provides Copy Code Reference inspired by [AdamWhittingham/vim-copy-filename](https://github.com/AdamWhittingham/vim-copy-filename).
 
+https://github.com/yuchanns/ccr.nvim/assets/25029451/d07fd9d5-43dc-4b34-aac3-83a78b032a68
+
 ## ⚡️ Requirements
 
 - Neovim >= 0.7.0
