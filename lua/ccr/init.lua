@@ -6,7 +6,7 @@ local M = {}
 local function set_to_reg(content)
 	local sysname = uv.os_uname().sysname
 	local cmd = [[let @+=]]
-	if sysname == "Darwin" or sysname == "Windows_NT" or vim.fn.has("gui") then
+	if sysname == "Darwin" or sysname == "Windows_NT" or vim.fn.has("gui") > 0 then
 		cmd = [[let @*=]]
 	end
 	vim.cmd(cmd .. "'" .. content .. "'")
