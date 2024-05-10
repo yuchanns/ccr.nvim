@@ -13,14 +13,14 @@ local function set_to_reg(content)
 end
 
 function M.copy_rel_path()
-	local ok, _ = pcall(set_to_reg, expand("%"))
+	local ok, _ = pcall(set_to_reg, expand("%:~:."))
 	if ok then
 		vim.notify("Relative path copied")
 	end
 end
 
 function M.copy_rel_path_and_line()
-	local ok, _ = pcall(set_to_reg, expand("%") .. ":" .. vim.fn.line("."))
+	local ok, _ = pcall(set_to_reg, expand("%:~:.") .. ":" .. vim.fn.line("."))
 	if ok then
 		vim.notify("Relative path and line copied")
 	end
