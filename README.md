@@ -25,7 +25,7 @@ Call ccr.nvim api in lua:
 ```lua
 local ccr = require("ccr")
 
-ccr.copy_rel_path() -- the mostly used. Copy the relative file path and line number of the code.
+ccr.copy_rel_path_and_line() -- the mostly used. Copy the relative file path and line number of the code.
 
 ccr.copy_rel_path() -- just copy the relative file path of the code.
 
